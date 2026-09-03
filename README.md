@@ -1,20 +1,20 @@
 # Python Workbook 2026 — Intro
 
-Сборник задач по Python с автоматической проверкой. Первая тема — **intro**:
-переменные, типы, ввод/вывод, арифметика, форматирование строк.
+A collection of Python exercises with automated tests. First topic: **intro** —
+variables, types, input/output, arithmetic, string formatting.
 
-## 1. Регистрация на GitHub
+## 1. Create a GitHub account
 
-1. Открой https://github.com/signup
-2. Введи почту, придумай пароль и username (латиницей, например `ivan-petrov`).
-3. Подтверди почту по коду из письма.
-4. Готово — аккаунт есть.
+1. Go to https://github.com/signup
+2. Enter your email, pick a password and a username (latin letters, e.g. `ivan-petrov`).
+3. Confirm your email with the code from the message.
+4. Done — you have an account.
 
-## 2. Установи программы
+## 2. Install the tools
 
-**Git** — https://git-scm.com/downloads (Windows: ставь со всеми галочками по умолчанию).
+**Git** — https://git-scm.com/downloads (on Windows keep all default options).
 
-**uv** — менеджер Python-проектов, сам поставит нужный Python.
+**uv** — the Python project manager; it installs the right Python for you.
 
 - macOS / Linux:
   ```
@@ -25,86 +25,87 @@
   powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
   ```
 
-**VS Code** — https://code.visualstudio.com + расширение **Python** от Microsoft.
+**VS Code** — https://code.visualstudio.com plus the **Python** extension by Microsoft.
 
-Проверь, что всё встало (перезапусти терминал):
+Restart your terminal, then check that everything is installed:
 
 ```
 git --version
 uv --version
 ```
 
-## 3. Сделай свою копию репозитория (fork)
+## 3. Fork the repository
 
-1. Открой https://github.com/Dzheka/python-workbook2026
-2. Жми **Fork** (справа сверху) → **Create fork**.
-3. Теперь репозиторий есть у тебя: `https://github.com/ТВОЙ-USERNAME/python-workbook2026`
+1. Open https://github.com/Dzheka/python-workbook2026
+2. Click **Fork** (top right) → **Create fork**.
+3. You now have your own copy at `https://github.com/YOUR-USERNAME/python-workbook2026`
 
-## 4. Скачай его на компьютер (clone)
+## 4. Clone it to your computer
 
-В терминале (подставь свой username):
+In the terminal (use your own username):
 
 ```
-git clone https://github.com/ТВОЙ-USERNAME/python-workbook2026.git
+git clone https://github.com/YOUR-USERNAME/python-workbook2026.git
 cd python-workbook2026
 code .
 ```
 
-## 5. Реши первую задачу
+## 5. Solve your first exercise
 
-Каждая задача — отдельная папка. Внутри:
+Every exercise lives in its own folder. Inside you'll find:
 
-- `hello_world.md` — условие
-- `test_hello_world.py` — тест, который проверит решение
-- `hello_world.py` — **этот файл создаёшь ты сам**, имя = имя папки
+- `hello_world.md` — the problem statement
+- `test_hello_world.py` — the test that checks your solution
+- `hello_world.py` — **you create this file yourself**; its name matches the folder
 
-Порядок работы:
+How to work:
 
-1. Прочитай условие: `intro/hello_world/hello_world.md`
-2. Создай файл `intro/hello_world/hello_world.py` и напиши решение:
+1. Read the statement: `intro/hello_world/hello_world.md`
+2. Create `intro/hello_world/hello_world.py` and write your solution:
    ```python
    print("Hello, World!")
    ```
-3. Запусти:
+3. Run it:
    ```
    uv run intro/hello_world/hello_world.py
    ```
-4. Проверь тестом:
+4. Check it with the test:
    ```
    uv run pytest intro/hello_world/
    ```
 
-## 6. Как читать условие
+## 6. How to read a problem statement
 
-В конце каждой задачи есть блок **Examples** — до двух блоков кода:
+Each exercise ends with an **Examples** section holding up to two code blocks:
 
-- **первый** — что ты вводишь с клавиатуры (по одному значению на строку, Enter после каждого);
-  если ввода нет (как в `hello_world`), блока нет;
-- **второй** — что программа должна напечатать, **точь-в-точь**.
+- the **first** is what you type while the program runs — one value per line,
+  pressing Enter after each; if the exercise needs no input (like `hello_world`),
+  this block is omitted;
+- the **second** is exactly what your program must print.
 
-Текст подсказки в `input()` писать не обязательно, проверка его не видит:
+You don't have to write a prompt inside `input()` — the checker never sees it:
 
 ```python
-radius = float(input("Введи радиус: "))  # можно
-radius = float(input())                   # тоже можно
+radius = float(input("Enter radius: "))  # a prompt is fine
+radius = float(input())                  # no prompt is fine too
 ```
 
-Регистр, пробелы и знаки препинания в выводе важны.
+Capitalization, spacing and punctuation in the output all matter.
 
-## 7. Результаты тестов
+## 7. Reading test results
 
-- **passed** — вывод совпал, задача решена
-- **failed** — не совпал, смотри в diff: что ожидалось и что напечатала твоя программа
-- **skipped** («Solution file not found») — ты ещё не создал файл с решением.
-  Skipped ≠ passed!
+- **passed** — your output matches; the exercise is solved
+- **failed** — it doesn't match; read the diff to see expected vs. actual output
+- **skipped** ("Solution file not found") — you haven't created the solution
+  file yet. Skipped is **not** passed!
 
-Запустить все задачи темы сразу:
+Run every exercise in the topic at once:
 
 ```
 uv run pytest intro/
 ```
 
-## 8. Сохрани работу на GitHub
+## 8. Push your work to GitHub
 
 ```
 git add .
@@ -112,25 +113,44 @@ git commit -m "solve hello_world"
 git push
 ```
 
-Первый раз git спросит логин — вводи username и **personal access token**
-вместо пароля (GitHub → Settings → Developer settings → Personal access tokens
-→ Tokens (classic) → Generate new token, галочка `repo`).
+The first time, git asks for credentials: use your username and a **personal
+access token** instead of a password (GitHub → Settings → Developer settings →
+Personal access tokens → Tokens (classic) → Generate new token, tick `repo`).
 
-## Шпаргалка по командам
+Every push runs the **Grade Calculator** automatically. Open the **Actions** tab
+in your fork to see your grade — the report lists passed, failed and skipped
+exercises and a percentage.
 
-| Команда | Что делает |
+## 9. Submit your work with a Pull Request
+
+When you want your work reviewed, open a pull request:
+
+1. Go to your fork on GitHub: `https://github.com/YOUR-USERNAME/python-workbook2026`
+2. Click **Contribute** → **Open pull request** (or the **Pull requests** tab → **New pull request**).
+3. Check the direction: base repository `Dzheka/python-workbook2026` `main` ←
+   head repository `YOUR-USERNAME/python-workbook2026` `main`.
+4. Title it with your name and the topic, e.g. `Ivan Petrov — intro`.
+5. Click **Create pull request**.
+
+The grader runs on the pull request too, so the grade shows up right in it.
+Keep pushing to your fork afterwards — new commits land in the same pull
+request automatically, no need to open a second one.
+
+## Command cheat sheet
+
+| Command | What it does |
 | --- | --- |
-| `cd имя_папки` | зайти в папку |
-| `code .` | открыть текущую папку в VS Code |
-| `uv run путь/к/файлу.py` | запустить программу |
-| `uv run pytest intro/задача/` | проверить одну задачу |
-| `uv run pytest intro/` | проверить всю тему |
-| `git add . && git commit -m "..." && git push` | сохранить работу на GitHub |
+| `cd folder_name` | enter a folder |
+| `code .` | open the current folder in VS Code |
+| `uv run path/to/file.py` | run a program |
+| `uv run pytest intro/exercise/` | test one exercise |
+| `uv run pytest intro/` | test the whole topic |
+| `git add . && git commit -m "..." && git push` | push your work to GitHub |
 
-## Полезное
+## Further reading
 
-- `intro/_docs/first_project.md` — первый проект с нуля, подробно
-- `intro/_docs/working_through_an_exercise.md` — как работать с задачей
-- `intro/_docs/vars_and_types.md` — переменные и типы
-- `intro/_docs/math_operators.md`, `math_functions.md` — арифметика
-- `intro/_docs/string_formatting.md` — форматирование строк
+- `intro/_docs/first_project.md` — your first project from scratch, step by step
+- `intro/_docs/working_through_an_exercise.md` — how to work through an exercise
+- `intro/_docs/vars_and_types.md` — variables and types
+- `intro/_docs/math_operators.md`, `math_functions.md` — arithmetic
+- `intro/_docs/string_formatting.md` — string formatting
