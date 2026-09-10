@@ -3,3 +3,6 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 .venv/
+uv.lock
+pyproject.toml
+.vscode/
