@@ -1,7 +1,9 @@
-# Python Workbook 2026 — Intro
+# Python Workbook 2026
 
-A collection of Python exercises with automated tests. First topic: **intro** —
-variables, types, input/output, arithmetic, string formatting.
+A collection of Python exercises with automated tests. Topics so far:
+
+- **intro** — variables, types, input/output, arithmetic, string formatting
+- **conditionals** — comparisons, boolean operators, `if`/`elif`/`else`, `match`
 
 ## 1. Create a GitHub account
 
@@ -149,8 +151,19 @@ request automatically, no need to open a second one.
 
 ## Further reading
 
+**intro**
+
 - `intro/_docs/first_project.md` — your first project from scratch, step by step
 - `intro/_docs/working_through_an_exercise.md` — how to work through an exercise
 - `intro/_docs/vars_and_types.md` — variables and types
 - `intro/_docs/math_operators.md`, `math_functions.md` — arithmetic
 - `intro/_docs/string_formatting.md` — string formatting
+
+**conditionals**
+
+- `conditionals/_docs/boolean_operators.md` — `bool`, `and`, `or`, `not`
+- `conditionals/_docs/comparison_operators.md` — comparisons
+- `conditionals/_docs/if_elif_else.md` — `if` / `elif` / `else`
+- `conditionals/_docs/string_utils.md` — string methods useful in conditions
+- `conditionals/_docs/ascii_table.md` — the ASCII table
+- `conditionals/_docs/match.md` — the `match` statement
