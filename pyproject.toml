@@ -21,6 +21,7 @@ build-backend = "hatchling.build"
 packages = [
     "intro",
     "conditionals",
+    "quiz",
 ]
 
 [dependency-groups]
