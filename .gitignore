@@ -3,5 +3,5 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 .venv/
-tests/
+.vscode/tests/
 .vscode/
