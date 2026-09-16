@@ -1,9 +1,9 @@
 price = float(input())
 quantity = int(input())
-discount = float(input())
+discount_percent = float(input())
 subtotal = price * quantity
-price_after_discount = (subtotal * discount) / 100
-total = subtotal - price_after_discount
-print(f"subtotal: {subtotal:.2f}")
-print(f"discount: {price_after_discount:.2f}")
-print(f"total: {total:.2f}")
+discount = subtotal * discount_percent / 100
+total = subtotal - discount
+print(f"{'subtotal':<10}{subtotal:>6.2f}")
+print(f"{'discount':<10}{discount:>6.2f}")
+print(f"{'total':<10}{total:>6.2f}")
