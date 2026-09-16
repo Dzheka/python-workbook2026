@@ -10,5 +10,5 @@ surname = input()
 
 print(f'{name.upper()} {surname.upper()}')
 
-print(f'{name[0]}.{surname[0]}')
-print(f'{len(name)} + {len(surname)} = {len(name) + len(surname)}')
+print(f'initials: {name[0].upper()}.{surname[0].upper()}.')
+print(f'letters: {len(name)} + {len(surname)} = {len(name) + len(surname)}')
