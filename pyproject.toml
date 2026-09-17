@@ -5,7 +5,9 @@ description = "A structured collection of Python exercises with automated tests"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "bs4>=0.0.2",
     "pytest>=9.1.1",
+    "requests>=2.34.2",
 ]
 
 # Installing the workbook into its own venv puts the repo root on `sys.path`,
