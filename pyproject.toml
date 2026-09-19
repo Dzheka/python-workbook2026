@@ -32,3 +32,8 @@ dev = [
 [tool.pytest.ini_options]
 addopts = "--import-mode=importlib"
 pythonpath = ["."]
+
+[tool.uv.workspace]
+members = [
+    "quiz/bill",
+]
