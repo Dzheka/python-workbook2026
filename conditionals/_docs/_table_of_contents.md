@@ -21,7 +21,7 @@
 1. [`name_shape`](../name_shape/name_shape.md)
 1. [`month_days`](../month_days/month_days.md)
 1. [`letter_grade_points`](../letter_grade_points/letter_grade_points.md)
-1. [`http_errors`](../http_errors/http_errors.md)
+1. [`http_errors](../http_errors/http_errors.md)
 1. [`faces_money`](../faces_money/faces_money.md)
 1. [`life_phases`](../life_phases/life_phases.md)
 1. [`fizz_buzz`](../fizz_buzz/fizz_buzz.md)
