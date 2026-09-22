@@ -1,0 +1,5 @@
+a = int(input("Enter pressure (Pascals): "))
+b = float(input("Enter volume (liters): "))
+c = int(input("Enter temperature : "))
+d = a * (b / 1000) / (8.314 *(c+273.15))
+print(f"Amount of gas: {d:.02f} moles")

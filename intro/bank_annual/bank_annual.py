@@ -1,0 +1,5 @@
+a = float(input("Initial deposit: "))
+b = float(input("annual interest rate: "))
+c = int(input("Enter number of years: "))
+d = a * ((1 + b/100)**c)         
+print(f"Balance after {c} years: {d:.02f}")         
