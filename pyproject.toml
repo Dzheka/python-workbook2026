@@ -19,6 +19,7 @@ build-backend = "hatchling.build"
 packages = [
     "intro",
     "conditionals",
+    "repetitions",
     "quiz",
 ]
 

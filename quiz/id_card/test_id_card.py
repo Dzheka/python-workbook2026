@@ -6,7 +6,10 @@ CASES = [
     ("bahrom\nqosimov\n", "BAHROM QOSIMOV\ninitials: B.Q.\nletters: 6 + 7 = 13"),
     ("malika\nrahimova\n", "MALIKA RAHIMOVA\ninitials: M.R.\nletters: 6 + 8 = 14"),
     ("ali\nnazarov\n", "ALI NAZAROV\ninitials: A.N.\nletters: 3 + 7 = 10"),
-    ("shohruh\nabdullozoda\n", "SHOHRUH ABDULLOZODA\ninitials: S.A.\nletters: 7 + 11 = 18"),
+    (
+        "shohruh\nabdullozoda\n",
+        "SHOHRUH ABDULLOZODA\ninitials: S.A.\nletters: 7 + 11 = 18",
+    ),
 ]
 
 
