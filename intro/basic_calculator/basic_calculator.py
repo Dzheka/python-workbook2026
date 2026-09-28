@@ -1,0 +1,6 @@
+a = int(input())
+b = int(input())
+plus = (a + b)
+minus = (a - b) 
+print(f"{a} + {b} = {plus}")
+print(f"{a} - {b} = {minus}")
