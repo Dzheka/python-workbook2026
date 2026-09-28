@@ -1,0 +1,6 @@
+num1 = int(input())
+num2 = int(input())
+num3 = int(input())
+x = max(num1, num2, num3)
+y = min(num1, num2, num3)
+print (y, num1 + num2 + num3 - x - y, x, sep=", ")
