@@ -6,3 +6,4 @@ for i in range(len(s) // 2):
         print(f"`{s}` is not a palindrome")
     else:
         print(f"`{s}` is a palindrome")
+ 
