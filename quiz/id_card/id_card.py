@@ -1,0 +1,5 @@
+name = input()
+surname = input()
+print(f"{name.upper()} {surname.upper()}")
+print(f"initials: {name[0].upper()}.{surname[0].upper()}.")
+print(f"letters: {len(name)} + {len(surname)} = {len(name) + len(surname)}")
