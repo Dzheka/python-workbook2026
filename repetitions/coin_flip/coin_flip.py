@@ -17,7 +17,7 @@ for i in range(1, 11):
         m = coins[randint(0, 1)]
     #print(m, end=' ')
     flips_a.append(flips)
-    print(f"({flips} flips)")
+    print(f"({flips - 1} flips)")
 
 average = sum(flips_a) / len(flips_a)
 print("Average:", average)
