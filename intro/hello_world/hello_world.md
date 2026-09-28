@@ -7,5 +7,7 @@ Write your first Python program that displays a simple message.
 **Example 1:**
 
 ```
-Hello, World!
-```
+print("Hello, World!)
+
+ 
+
