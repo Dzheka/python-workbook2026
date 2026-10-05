@@ -1,9 +1,12 @@
 s = input()
-
-
-for i in range(len(s) // 2):
-    if s[i] != s[-(i + 1)]:
-        print(f"`{s}` is not a palindrome")
+flag = True
+for i in range(1, len(s)):
+    if s[i] == s[-(i+1)]:
+        continue
     else:
-        print(f"`{s}` is a palindrome")
- 
+        flag = False
+
+if flag:
+    print(f"`{s}` is a palindrome")
+else:
+    print(f"`{s}` is not a palindrome")

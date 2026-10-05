@@ -20,6 +20,7 @@ packages = [
     "intro",
     "conditionals",
     "repetitions",
+    "functions",
     "quiz",
 ]
 

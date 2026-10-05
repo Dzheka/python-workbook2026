@@ -1,16 +1,16 @@
-max = 0
-min = 0
-
+max=0
+min=0
 while True:
-    a = int(input())
-    if a == '':
+    i = input()
+    if i == '':
         break
+    i = int(i)
     if not min:
-        min = a
-        max = a
-    if a > max:
-        max = a
-    if a < min:
-        min = a
+        min = i
+        max = i
+    if i > max:
+        max = i
+    if i < min:
+        min = i
 print(f"Minimum: {min}")
 print(f"Maximum: {max}")

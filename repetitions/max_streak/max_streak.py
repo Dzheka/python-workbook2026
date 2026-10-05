@@ -1,15 +1,14 @@
-a = 0
-b = 0
-
+max_streak = 0
+current_streak = 0
 while True:
-    x = int(input())
-    if x == "":
+    n = input()
+    if n == '':
         break
-    if x == 1:
-        b += 1
-        if a < b:
-            a = b
+    if int(n) == 1:
+        current_streak += 1
+        if max_streak < current_streak:
+            max_streak = current_streak
     else:
-        b = 0
+        current_streak = 0
 
-print("Maximum streak:", a)
+print("Maximum streak:", max_streak)

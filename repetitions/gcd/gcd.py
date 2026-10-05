@@ -1,9 +1,9 @@
-n = int(input())
+n= int(input())
 m = int(input())
-
-d = min(m, n)
-
-while m % d != 0 or n % d != 0:
-    d -= 1
-
-print(f"The GCD is {d}")
+if n > m:
+    d = m
+else:
+    d = n
+while not (m % d == 0) or not (n % d == 0):
+    d = d - 1
+print(d)
