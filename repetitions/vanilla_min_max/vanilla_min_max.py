@@ -1,9 +1,16 @@
 a = input()
-b = 0
-while a!="":
-    a=int(a)
+b = int(a)
+c = int(a)
+while a != "":
+    a = int(a)
     if a>b:
-        b==a
+        b=a
     else:
-        b==b
-print(b)
+        b=b
+    if c>a:
+        c=a
+    elif c<a:
+        c=c
+    a = input()
+print(f"Minimum: {c}")
+print(f"Maximum: {b}")
