@@ -1,0 +1,5 @@
+pressure=float(input("Enter pressure (Pascals): "))
+volume=float(input("Enter volume (liters): "))
+temperature=float(input("Enter temperature (°C): "))
+gas=pressure*volume/(8314*(temperature+273.15))
+print(F"Amount of gas: {gas:.2f} moles")
