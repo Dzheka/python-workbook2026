@@ -66,3 +66,5 @@ print(number_to_words(n))
 
 for i in range(0, -101, -1):
     print(number_to_words(i))
+
+print(number_to_words(789000))  
