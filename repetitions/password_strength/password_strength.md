@@ -65,14 +65,3 @@ Hel!23
 ```
 Medium
 ```
-
-## Logic
-- Initialize five boolean flags: has_upper, has_lower, has_digit, has_special, has_length
-- Loop through each character in the password:
-  - Check if uppercase: set has_upper to True
-  - Check if lowercase: set has_lower to True
-  - Check if digit: set has_digit to True
-  - Check if special character: set has_special to True
-- Check if password length >= 8: set has_length to True
-- Count how many criteria are met
-- Display strength based on count

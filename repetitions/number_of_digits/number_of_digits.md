@@ -7,6 +7,7 @@ Count the number of digits in an integer using loops.
 - Count the number of digits using a loop (not using len() or string conversion)
 - Display the count
 - Negative numbers should count their digits (ignore the minus sign)
+- Zero has one digit
 
 ## Examples
 **Example 1:**
@@ -32,12 +33,3 @@ Count the number of digits in an integer using loops.
 ```
 1
 ```
-
-## Logic
-- Take the absolute value to handle negative numbers
-- Initialize count to 0
-- Use a while loop:
-  - While number > 0:
-    - Increment count
-    - Divide number by 10 (integer division)
-- Special case: if input is 0, return 1

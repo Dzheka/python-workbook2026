@@ -3,10 +3,8 @@ def test_fizz_buzz(solution):
 
     lines = result.stdout.strip().split("\n")
 
-    # Should have 100 lines
     assert len(lines) == 100
 
-    # Check specific values
     assert lines[0] == "1"
     assert lines[1] == "2"
     assert lines[2] == "fizz"
