@@ -21,6 +21,7 @@ packages = [
     "conditionals",
     "repetitions",
     "functions",
+    "lists",
     "quiz",
 ]
 
