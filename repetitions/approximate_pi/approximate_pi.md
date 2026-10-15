@@ -17,16 +17,3 @@ Approximation 3: 3.1333333333333337
 Approximation 4: 3.1452380952380955
 ...
 ```
-
-## Logic
-- Start with `π ≈ 3`
-- For each term (1 to 15):
-  - Calculate denominator: `n × (n+1) × (n+2)` where `n` increases by 2 each time
-  - Alternate between adding and subtracting `4/denominator`
-  - Display the approximation
-
-## Pattern
-- Term 1: `3`
-- Term 2: `3 + 4/(2×3×4)`
-- Term 3: `3 + 4/(2×3×4) - 4/(4×5×6)`
-- Term 4: `3 + 4/(2×3×4) - 4/(4×5×6) + 4/(6×7×8)`

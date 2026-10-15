@@ -16,7 +16,7 @@ Write a program that computes the average of a collection of values entered by t
 0
 ```
 ```
-The average is 20.0
+20.0
 ```
 
 **Example 2:**
@@ -28,11 +28,5 @@ The average is 20.0
 0
 ```
 ```
-The average is 20.0
+20.0
 ```
-
-## Logic
-- Use a while loop to read values until 0 is entered
-- Keep track of the `sum` and `count` of values
-- The 0 should not be included in the average
-- Average = `sum / count`

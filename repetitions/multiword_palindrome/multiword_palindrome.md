@@ -38,12 +38,3 @@ Determine if a phrase is a palindrome when spacing (and optionally punctuation) 
 ```
 `hello world` is not a palindrome
 ```
-
-## Logic
-- Remove spaces from the string
-- Convert to same case (for advanced version)
-- Remove punctuation (for advanced version)
-- Check if modified string is a palindrome
-{{ ... }}
-- If any pair doesn't match, it's not a palindrome
-- For index `i`, compare `cleaned[i]` with `cleaned[-(i+1)]`

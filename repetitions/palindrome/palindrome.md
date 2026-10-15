@@ -38,13 +38,3 @@ racecar
 ```
 `racecar` is a palindrome
 ```
-
-## Logic
-- Compare first character with last, second with second-to-last, etc.
-- Use a loop to iterate through half the string
-- If any pair doesn't match, it's not a palindrome
-- For index `i`, compare `string[i]` with `string[-(i+1)]`
-
-## Fun Facts
-- Aibohphobia: fear of palindromes (itself a palindrome!)
-- Ailihphilia: love of palindromes
