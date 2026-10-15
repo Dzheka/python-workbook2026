@@ -1,0 +1,36 @@
+name: Grade Calculator
+
+# Runs on every branch and pull request, so a student working in a fork gets a
+# grade on their own pushes. Unimplemented exercises `pytest.skip` and count
+# against the total, so the report is meaningful on any branch.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+# Only the latest commit's grade matters; cancel superseded runs.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  calculate-grade:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.7"
+          enable-cache: true
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Run test suite and report grade
+        run: uv run pytest -n auto --tb=no --continue-on-collection-errors
