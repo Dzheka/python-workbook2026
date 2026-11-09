@@ -23,6 +23,7 @@ packages = [
     "functions",
     "lists",
     "sets",
+    "dicts",
     "quiz",
 ]
 
