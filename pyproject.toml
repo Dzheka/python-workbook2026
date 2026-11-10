@@ -22,6 +22,8 @@ packages = [
     "repetitions",
     "functions",
     "lists",
+    "sets",
+    "dicts",
     "quiz",
 ]
 

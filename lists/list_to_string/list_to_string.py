@@ -1,8 +1,8 @@
 def list_to_string(w: list[str]):
-    s=w[0]
     if w==[]:
         return ""
     else:
+        s=w[0]
         for i in range (1, len(w)):
             s = s + " " + w[i]
     return s
