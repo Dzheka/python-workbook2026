@@ -1,6 +1,12 @@
 version = 1
-revision = 3
+revision = 5
 requires-python = ">=3.13"
+
+[manifest]
+members = [
+    "first-project",
+    "python-workbook2026",
+]
 
 [[package]]
 name = "colorama"
@@ -19,6 +25,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/bf/89/780e11f9588d9e712
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ab/84/02fc1827e8cdded4aa65baef11296a9bbe595c474f0d6d758af082d849fd/execnet-2.1.2-py3-none-any.whl", hash = "sha256:67fba928dd5a544b783f6056f449e5e3931a5c378b128bc18501f7ea79e296ec", size = 40708, upload-time = "2025-11-12T09:56:36.333Z" },
 ]
+
+[[package]]
+name = "first-project"
+version = "0.1.0"
+source = { editable = "first-project" }
 
 [[package]]
 name = "iniconfig"
