@@ -29,10 +29,3 @@ Create a pyramid pattern using numbers instead of asterisks.
  121
 12321
 ```
-
-## Logic
-- For each row i from 1 to n:
-  - Print (n - i) spaces for centering
-  - Print ascending numbers from 1 to i
-  - Print descending numbers from (i-1) to 1
-- Use nested loops to build each row

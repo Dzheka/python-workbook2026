@@ -31,15 +31,3 @@ Simulate finding the maximum value in a collection of 100 random integers.
 The maximum value found was 100
 The maximum value was updated 5 times
 ```
-
-## Logic
-1. Generate first random integer as initial maximum
-2. Set update count to 0
-3. For the next 99 integers:
-   - Generate random integer
-   - Display it
-   - If it's larger than current maximum:
-     - Update maximum
-     - Increment update count
-     - Display " <== Update" on same line
-4. Display final maximum and update count

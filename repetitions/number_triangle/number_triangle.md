@@ -43,10 +43,3 @@ Create a right triangle pattern using consecutive numbers.
 123456
 1234567
 ```
-
-## Logic
-- Use nested loops: outer for rows (1 to n)
-- For each row i:
-  - Inner loop from 1 to i
-  - Print each number without spaces
-- Print newline after each row

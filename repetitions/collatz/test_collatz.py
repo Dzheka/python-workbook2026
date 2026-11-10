@@ -13,6 +13,5 @@ import pytest
 def test_collatz(solution, input_value, expected_sequence):
     result = solution.run(input_text=input_value)
 
-    # Check that all numbers in sequence appear in output
     for num in expected_sequence:
         assert num in result.stdout

@@ -35,10 +35,3 @@ Maximum: 15
 Minimum: -10
 Maximum: -1
 ```
-
-## Logic
-- Read the first value (check if blank)
-- Initialize min and max to the first value
-- Use a while loop to read remaining values
-- Update min if current value is smaller
-- Update max if current value is larger

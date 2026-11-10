@@ -16,40 +16,24 @@ Compute the parity bit for groups of 8 bits using even parity.
 - Goal: total 1s (including parity bit) is even
 
 ## Examples
-**Example 1:**
+**Example 1:** (several strings, then a blank line to stop)
 ```
 00000000
-```
-```
-Parity bit: 0
-```
-
-**Example 2:**
-```
 10101010
-```
-```
-Parity bit: 0
-```
-
-**Example 3:**
-```
-11111111
-```
-```
-Parity bit: 0
-```
-
-**Example 4:**
-```
 10101011
+
 ```
 ```
+Parity bit: 0
+Parity bit: 0
 Parity bit: 1
 ```
 
-## Logic
-- Use while loop to read strings until blank
-- Check if string length is 8
-- Count number of '1' characters using count() method
-- If count is odd, parity bit is 1; otherwise 0
+**Example 2:** (input that isn't 8 bits)
+```
+1010
+
+```
+```
+Error: Input must be exactly 8 bits
+```

@@ -31,6 +31,7 @@ def test_password_contains_all_types():
 
 
 def test_password_randomness():
+    # Generate multiple passwords and ensure they're different
     passwords = [password(12) for _ in range(10)]
     unique_passwords = set(passwords)
 
