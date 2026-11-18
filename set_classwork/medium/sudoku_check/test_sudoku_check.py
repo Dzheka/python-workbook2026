@@ -1,5 +1,6 @@
 import threading
 
+
 import pytest
 
 sudoku_check = pytest.importorskip(
