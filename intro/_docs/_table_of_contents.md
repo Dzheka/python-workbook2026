@@ -1,7 +1,5 @@
 # Table of Contents
-
 ## Recommended Reading Order
-
 1. [`first_project.md`](first_project.md)
 2. [`working_through_an_exercise.md`](working_through_an_exercise.md)
 3. [`vars_and_types.md`](vars_and_types.md)
