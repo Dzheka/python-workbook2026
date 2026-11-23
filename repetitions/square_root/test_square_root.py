@@ -1,4 +1,5 @@
 import math
+import re
 
 import pytest
 
@@ -15,9 +16,6 @@ import pytest
 )
 def test_square_root(solution, input_value, expected_sqrt):
     result = solution.run(input_text=f"{input_value}\n")
-
-    # Extract numeric value from output
-    import re
 
     numbers = re.findall(r"\d+\.\d+", result.stdout)
 

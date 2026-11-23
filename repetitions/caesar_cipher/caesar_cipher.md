@@ -1,15 +1,15 @@
 # Caesar Cipher
 
-Implement a Caesar cipher to encode/decode messages by shifting letters.
+Julius Caesar protected his military orders with a simple trick: shift every
+letter a fixed number of places along the alphabet. With a shift of 3, `A`
+becomes `D`, `B` becomes `E`, and `Z` wraps back around to `C`. To read the
+message, you shift the other way.
 
 ## Task
-- Read a message from the user
-- Read a shift amount from the user
-- Shift each letter by the specified amount
-- Display the encoded/decoded message
-- Support both uppercase and lowercase letters
-- Support negative shift values (for decoding)
-- Non-letter characters remain unchanged
+- Read a message, then a shift amount
+- Shift each letter by that amount, wrapping around the alphabet
+- Keep each letter's case; leave non-letter characters unchanged
+- A negative shift decodes a message
 
 ## Examples
 **Example 1:**
@@ -23,6 +23,15 @@ KHOOR
 
 **Example 2:**
 ```
+KHOOR
+-3
+```
+```
+HELLO
+```
+
+**Example 3:**
+```
 xyz
 3
 ```
@@ -30,21 +39,11 @@ xyz
 abc
 ```
 
-**Example 3:**
+**Example 4:**
 ```
 Hello, World!
--3
+3
 ```
 ```
-Ebiil, Tloia!
+Khoor, Zruog!
 ```
-
-## Logic
-- For each character in the message:
-  - If it's a letter:
-    - Convert to position (A=0, B=1, ..., Z=25)
-    - Add `shift` value
-    - Use modulo 26 to wrap around
-    - Convert back to letter
-  - If not a letter, keep it unchanged
-- Maintain case (uppercase stays uppercase, lowercase stays lowercase)

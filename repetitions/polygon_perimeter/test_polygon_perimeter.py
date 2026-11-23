@@ -1,3 +1,5 @@
+import re
+
 import pytest
 
 
@@ -14,9 +16,6 @@ import pytest
 )
 def test_polygon_perimeter(solution, input_values, expected_perimeter):
     result = solution.run(input_text=input_values)
-
-    # Extract the numeric value from output
-    import re
 
     numbers = re.findall(r"\d+\.\d+", result.stdout)
 

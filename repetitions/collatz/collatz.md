@@ -20,7 +20,12 @@ Generate and display Collatz sequences for integers entered by the user.
 5
 ```
 ```
-5 16 8 4 2 1
+5
+16
+8
+4
+2
+1
 ```
 
 **Example 2:**
@@ -28,7 +33,13 @@ Generate and display Collatz sequences for integers entered by the user.
 10
 ```
 ```
-10 5 16 8 4 2 1
+10
+5
+16
+8
+4
+2
+1
 ```
 
 **Example 3:**
@@ -38,14 +49,3 @@ Generate and display Collatz sequences for integers entered by the user.
 ```
 1
 ```
-
-## Logic
-- Use a while loop to read integers from user
-- For each `n` > 0:
-  - Display `n`
-  - While `n` != 1:
-    - If `n` is even: `n` = `n` // 2
-    - If `n` is odd: `n` = `n` * 3 + 1
-    - Display `n`
-  - Read next number
-- Stop when user enters `n` ≤ 0

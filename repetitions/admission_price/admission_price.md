@@ -9,10 +9,12 @@ A zoo determines admission price based on the age of guests.
 - Display the cost with 2 decimal places
 
 ## Pricing
-- Age 2 and under: Free ($0.00)
-- Age 3-12: $14.00
-- Age 65 and over: $18.00
-- All others: $23.00
+| Age         | Price  |
+|-------------|--------|
+| 2 and under | $0.00  |
+| 3 to 12     | $14.00 |
+| 65 and over | $18.00 |
+| All others  | $23.00 |
 
 ## Examples
 **Example 1:**
@@ -48,9 +50,3 @@ $37.00
 ```
 $14.00
 ```
-
-## Logic
-- Use a while loop to read ages until blank line
-- For each age, determine price based on age category
-- Add to running total
-- Display total with 2 decimal places

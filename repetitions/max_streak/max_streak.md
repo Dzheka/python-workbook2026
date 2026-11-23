@@ -1,13 +1,8 @@
 # Maximum Streak
 
-Find the longest winning streak in a series of game results.
-
-## Task
-- Read game results from the user until a blank line is entered
-- Each result is either `1` (win/success) or `0` (loss/failure)
-- A streak is consecutive wins (1s)
-- Any loss (0) breaks the current streak
-- Display the maximum winning streak length
+Game results arrive one per line — `1` for a win, `0` for a loss — ending with
+a blank line. A streak is a run of consecutive wins, and any loss breaks it.
+Read the results and display the length of the longest winning streak.
 
 ## Examples
 **Example 1:**
@@ -66,11 +61,3 @@ Maximum streak: 3
 Maximum streak: 0
 ```
 *Explanation: All losses, no winning streak*
-
-## Logic
-- Track current streak of consecutive wins (1s)
-- Track maximum streak seen so far
-- As you read each value:
-  - If it's a win (1): increment current streak
-  - If it's a loss (0): compare current streak to max, then reset current streak to 0
-- After loop ends, compare final streak to max (in case the input ends on a winning streak)

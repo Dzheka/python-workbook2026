@@ -40,9 +40,3 @@ Generate and display a geometric sequence.
 12.5
 6.25
 ```
-
-## Logic
-- Start with the first term
-- Use a for loop to generate `count` terms
-- Multiply by `ratio` to get the next term
-- Display each term using 9 significant figures precision (use `:.9g` in f-string)
