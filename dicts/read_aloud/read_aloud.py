@@ -15,7 +15,6 @@ TENS = {
     60: 'SIXTY', 70: 'SEVENTY', 80: 'EIGHTY', 90: 'NINETY'
 }
 
-
 def read_aloud(number: str) -> str:
     if not number:
         return ""
@@ -31,14 +30,17 @@ def read_aloud(number: str) -> str:
         parts.append(f"{ONES[hundreds]} HUNDRED")
         n %= 100
 
-    if n > 0:
-        if n 1
-        elif n >= 10:
-            parts.append(TEENS[n])
-            n %= 10
-        elif n < 10:
-            parts.append()
+    if n >= 20:
+        tens = (n // 10) * 10
+        parts.append(TENS[tens])
+        n %= 10
 
+    if 10 <= n <= 19:
+        parts.append(TEENS[n])
+    elif 1 <= n <= 9:
+        parts.append(ONES[n])
+
+    return " ".join(parts)
 
 if __name__ == "__main__":
     print(read_aloud("7"))  # "SEVEN"
