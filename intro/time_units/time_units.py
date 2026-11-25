@@ -1,0 +1,5 @@
+days=float(input("Enter days: "))
+hours=float(input("Enter hours: "))
+minites=float(input("Enter minites: "))
+seconds=float(input("Enter seconds: "))
+print(f"{days*24*60*60+hours*60*60+minites*60+seconds:.0f}")
