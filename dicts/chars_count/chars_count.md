@@ -18,7 +18,7 @@ def chars_count(text: str) -> dict[str, int]:
 
 
 if __name__ == "__main__":
-    print(chars_count("hello"))  # {'h': 1, 'e': 1, 'l': 2, 'o': 1}
+    print(chars_count("hello"))# {'h': 1, 'e': 1, 'l': 2, 'o': 1}
     print(chars_count(""))  # {}
     print(chars_count("aaa"))  # {'a': 3}
     print(chars_count("hello world"))  # {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
